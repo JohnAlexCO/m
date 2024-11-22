@@ -1,0 +1,39 @@
+<svg fill-rule="evenodd" height="600" width="600" xmlns="http://www.w3.org/2000/svg" mask="url(#cutout-mask)">
+  <defs>
+    <mask id="cutout-mask">
+      <!-- Define the mask area as white -->
+      <rect width="100%" height="100%" fill="white" />
+      <!-- Define the cutout area as black -->
+      <circle r="30" cx="200" cy="62.5" fill="black"/>
+      <line x1="0" y1="133" x2="600" y2="133" style="stroke:black;stroke-width:10"/>
+      <line x1="0" y1="200" x2="600" y2="200" style="stroke:black;stroke-width:10"/>
+      <line x1="0" y1="400" x2="600" y2="400" style="stroke:black;stroke-width:10"/>
+      <polyline points="0 267, 66 333, 133 267, 200 333, 266 267, 333 333, 400 267, 467 333, 533 267, 600 333" style="fill:none;stroke:black;stroke-width:10"/>
+      <polyline points="0 467, 66 533, 133 467, 200 533, 266 467, 333 533, 400 467, 467 533, 533 467, 600 533" style="fill:none;stroke:black;stroke-width:10"/>
+    </mask>
+  </defs>
+  
+  <!-- SNAKE HEAD -->
+  <path style="fill:#ff8900;stroke:white;stroke-width:0"
+  d="M 120 0 L 360 0 L 480 200 L 240 200 L 120 100 Z"  
+  />
+  <path style="fill:#ffd800;stroke:white;stroke-width:0"
+  d="M 160 133 L 440 133 L 480 200 L 240 200 Z"
+  />
+
+  <!-- SNAKE MIDSECTION -->
+  <path style="fill:#ff8900;stroke:white;stroke-width:0"
+  d="M 120 200 L 120 280 L 133 267 L 200 333 L 266 267 L 333 333 400 267 L 467 333 L 480 320 L 480 200 Z"
+  />
+  <path style="fill:#ffd800;stroke:white;stroke-width:0"
+  d="M 120 400 L 120 280 L 133 267 L 200 333 L 266 267 L 333 333 400 267 L 467 333 L 480 320 L 480 400 Z"
+  />
+
+  <!-- SNAKE COIL -->
+  <path style="fill:#ff8900;stroke:white;stroke-width:0"
+    d="M 0 400 L 0 467 L 67 533 L 133 467 L 200 533 L 267 467 L 333 533 L 400 467 L 467 533 L 533 467 L 600 533 L 600 400 Z"
+  />
+  <path style="fill:#ffd800;stroke:white;stroke-width:0"
+    d="M 0 600 L 0 467 L 67 533 L 133 467 L 200 533 L 267 467 L 333 533 L 400 467 L 467 533 L 533 467 L 600 533 L 600 600 Z"
+  />
+</svg>

@@ -1,0 +1,12 @@
+# echo $PWD
+rm -rf ./m.config
+xxd -n root_contributors -i contributors ./locale/contributors.h
+xxd -n license_text -i license ./locale/license.h
+xxd -n help_text -i help ./locale/help.h
+xxd -n root_default_config -i default.config ./locale/config.h
+gcc -o m m.c -lm -D ENGLISH
+# gcc -o ./modules/success test_module.c -D test_success -Oz
+# gcc -o ./modules/failure test_module.c -Oz
+tcc -o ./modules/success test_module.c -D test_success -lm
+tcc -o ./modules/failure test_module.c -lm
+rm -rf ./generated/*

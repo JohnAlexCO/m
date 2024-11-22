@@ -1,0 +1,21 @@
+    an extensible cross-compiler CLI
+    m [inputs] [flags]
+
+SETTINGS
+    - `init` makes folders for modules and temporary files and creates a config
+    - `config` launches the configuration file in a text editor
+    - `reset` deletes the config and unmounts all modules
+    - `license` prints the license agreement
+    - `contributors` prints the names of the compiler's contributors
+
+MODULES
+    - `install {name} {flag} {ext} {url}` downloads and mounts module from url
+    - `mount   {name} {flag} {ext} {binary}` installs local module
+    - `remove  {name}` deletes and unmounts the module
+    - `unmount {name}` uninstalls local module without deleting
+    - `list` prints the list of currently installed modules
+
+USAGE
+    - `{filename.ext}` will infer the frontend from the file extension
+    - `{-cflag} [filename]` will tell the cli to use a specific frontend
+    - `{filename1} {filename2}` frontend outputs are passed in sequential order
