@@ -1,4 +1,3 @@
-![Modula's Garter compiler logo](./assets/garter.png?height=200)
 # m
 is a modular cross-compiler interface.
 It does not contain any frontend or backends on its own,
