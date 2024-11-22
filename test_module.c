@@ -27,7 +27,7 @@ int main (int argc, char **argv) {
     else if (argc == 2) {
         if (string_compare(argv[1], "--version", 16)) { printf(name ", version 0.0.0\n"); exit(0); }
         if (string_compare(argv[1], "--contributors", 16)) { printf(name ": John Alex, Modula.dev\n"); exit(0); }
-        if (string_compare(argv[1], "--mconfig", 16)) { printf(name "\n", config); exit(0); }
+        if (string_compare(argv[1], "--mconfig", 16)) { printf(name config "\n"); exit(0); }
         if (string_compare(argv[1], "--license", 16)) { printf(name ": GNU GPLv3\n"); exit(0); }
     }
     else { printf("usage: %s input output\n"); exit(1); }
